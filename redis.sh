@@ -8,7 +8,6 @@ N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
-exec &>$LOGFILE
 
 echo "script stareted executing at $TIMESTAMP"
 
