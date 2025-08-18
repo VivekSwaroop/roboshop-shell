@@ -84,7 +84,7 @@ dnf install mysql -y
 
 VALIDATE $? "install MySQL client"
 
-mysql -h mysql.daws76s.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+mysql -h mysql.vivekdevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
 
 VALIDATE $? "loading shipping data"
 
