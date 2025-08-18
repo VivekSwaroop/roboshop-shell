@@ -8,7 +8,7 @@ Environment=CART_HOST=cart.vivekdevops.online
 Environment=CART_PORT=8080
 Environment=USER_HOST=user.vivekdevops.online
 Environment=USER_PORT=8080
-Environment=AMQP_HOST=rabbitmq.vivekdevops.online
+Environment=AMQP_HOST=rabitmq.vivekdevops.online
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=roboshop123
 
