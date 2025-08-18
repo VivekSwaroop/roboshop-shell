@@ -84,9 +84,17 @@ dnf install mysql -y
 
 VALIDATE $? "install MySQL client"
 
-mysql -h mysql.vivekdevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+mysql -h mysql.vivekdevops.online -uroot -pRoboShop@1 < /app/db/schema.sql
 
-VALIDATE $? "loading shipping data"
+VALIDATE $? "loading shipping schema"
+
+mysql -h mysql.vivekdevops.online -uroot -pRoboShop@1 < /app/db/app-user.sql
+
+VALIDATE $? "loading shipping app user"
+
+mysql -h mysql.vivekdevops.online -uroot -pRoboShop@1 < /app/db/master-data.sql
+
+VALIDATE $? "loading shipping master-data"
 
 systemctl restart shipping 
 
