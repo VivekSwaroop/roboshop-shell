@@ -78,10 +78,10 @@ systemctl daemon-reload
 
 VALIDATE $? "cart daemon reload"
 
-systemctl start cart
-
-VALIDATE $? "Starting cart"
-
 systemctl enable cart
 
 VALIDATE $? "Enable cart"
+
+systemctl start cart
+
+VALIDATE $? "Starting cart"
